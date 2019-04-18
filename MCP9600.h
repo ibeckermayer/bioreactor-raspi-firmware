@@ -14,9 +14,13 @@ private:
     int devid; ///< I2C address
     int fd;
     static unordered_map<string, int> reg_map;
+
     void configure_device();
+
     void configure_thermocouple();
+
     float temp_read_to_C(int res);
+
     int setup_wiring_pi();
 
 public:

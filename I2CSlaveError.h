@@ -27,7 +27,7 @@ public:
 };
 
 /// @brief Error if file descriptor for I2C device could not be obtained
-class I2CFileDescriptorError: public I2CSlaveError {
+class I2CFileDescriptorError : public I2CSlaveError {
 public:
     /// @brief constructor
     /// @param[in] name name for the device
@@ -36,7 +36,7 @@ public:
 };
 
 /// @brief Error for failed i2c read
-class I2CReadError: public I2CSlaveError {
+class I2CReadError : public I2CSlaveError {
 public:
     /// @brief constructor
     /// @param[in] name name for the device
@@ -45,7 +45,7 @@ public:
 };
 
 /// @brief Error for failed i2c write
-class I2CWriteError: public I2CSlaveError {
+class I2CWriteError : public I2CSlaveError {
 public:
     /// @brief constructor
     /// @param[in] name name for the device

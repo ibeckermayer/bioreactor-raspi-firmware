@@ -21,7 +21,8 @@ I2CFileDescriptorError::I2CFileDescriptorError(const std::string &name, int slav
         "Could not get file descriptor for device ", name, slaveAddress) {}
 
 I2CReadError::I2CReadError(const std::string &name, int slaveAddress) : I2CSlaveError("Read failed for device ", name,
-                                                                                 slaveAddress) {}
+                                                                                      slaveAddress) {}
 
-I2CWriteError::I2CWriteError(const std::string &name, int slaveAddress) : I2CSlaveError("Write failed for device ", name,
-                                                                                   slaveAddress) {}
+I2CWriteError::I2CWriteError(const std::string &name, int slaveAddress) : I2CSlaveError("Write failed for device ",
+                                                                                        name,
+                                                                                        slaveAddress) {}

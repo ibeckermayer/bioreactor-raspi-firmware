@@ -63,7 +63,6 @@ public:
     int i2cRead(I2CNumBits numBits, int reg);
 
 
-
 };
 
 
