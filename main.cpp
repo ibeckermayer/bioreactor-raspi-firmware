@@ -4,9 +4,9 @@
 using namespace std;
 
 int main() {
-    MCP9600 mcp = MCP9600();
+    MCP9600 mcp = MCP9600(0x60);
 
     for (int i = 0; i < 10; i++) {
-        printf("Temperature: %f Celsius\n", mcp.read_temp());
+        printf("Temperature: %f Celsius\n", mcp.readTemp());
     }
 }
