@@ -1,6 +1,4 @@
-//
-// Created by Isaiah Becker-Mayer on 2019-04-17.
-//
+/// @file API for interfacing with MCP9600 thermocouple chip via I2C
 
 #ifndef FIRMWARE_MCP9600_H
 #define FIRMWARE_MCP9600_H
@@ -10,18 +8,15 @@
 
 using namespace std;
 
+/// @brief MCP9600 class
 class MCP9600 {
 private:
-    int devid;
+    int devid; ///< I2C address
     int fd;
     static unordered_map<string, int> reg_map;
-
     void configure_device();
-
     void configure_thermocouple();
-
-    static float temp_read_to_C(int res);
-
+    float temp_read_to_C(int res);
     int setup_wiring_pi();
 
 public:
