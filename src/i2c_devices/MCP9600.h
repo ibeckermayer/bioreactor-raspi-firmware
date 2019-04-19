@@ -44,7 +44,7 @@ public:
     virtual ~MCP9600();
 
     /// @brief constructor, calls I2CSlave constructor with name as "MCP9600"
-    /// @param slaveAddress
+    /// @param slaveAddress[in] i2c address of the slave device
     /// @throws I2CFileDescriptorError
     /// @throws I2CWriteError
     MCP9600(int slaveAddress);
