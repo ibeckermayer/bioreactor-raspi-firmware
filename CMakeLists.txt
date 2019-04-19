@@ -7,4 +7,4 @@ find_library(WIRINGPI_LIBRARIES NAMES wiringPi)
 
 
 add_subdirectory(src)
-
+add_subdirectory(test)

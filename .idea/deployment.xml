@@ -5,7 +5,7 @@
       <paths name="isaiah-rpi-0 (8b8f44dc-3d19-4ca5-a768-b0edb995e703)">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/tmp.YPae34dD6e" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/ibeckermayer/OpenInsulin/firmware" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release" />
